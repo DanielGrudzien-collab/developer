@@ -1,162 +1,154 @@
-* {
-  box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Albert Sans', sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  color: #070707;
-  font-family: "Albert Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  overflow-x: hidden;
-  background-color: #F2FAF8;
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .navigator {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #506453;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.navigator a {
-  color: #F2FAF8;
-  margin: 0 10px;
+.navigator #logo {
+    display: flex;
+    align-items: center;
 }
 
-.navigator a:hover {
-  color: #E773B5;
+.navigator #logo img {
+    height: 80px;
+    margin-right: 10px;
 }
 
-.navigator img {
-  height: 40px;
+.navigator #logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #e773b5;
+    margin-right: 20px;
 }
 
-#logo img {
-  height: 60px;
+.navigator nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-#search {
-  border: 1px solid #506453;
-  border-radius: 3px;
-  padding: 3px;
+.navigator nav ul li {
+    display: inline;
 }
 
-#searching {
-  width: 13px;
-  height: 13px;
+.navigator nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigator nav ul li a:hover {
+    color: #e773b5;
+}
+
+#social_media {
+    display: flex;
+    gap: 15px;
+}
+
+#social_media a {
+    color: #333;
+    transition: color 0.3s;
+}
+
+#social_media a:hover {
+    color: #e773b5;
+}
+
+#social_media i {
+    font-size: 24px;
 }
 
 main {
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.higher {
-  display: flex;
-  justify-content: space-between;
+section {
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#reklama1, #reklama2 {
-  background-color: #506453;
-  width: 100px;
-  height: 649px;
-  position: absolute;
-  top: 175px;
-  color: #F2FAF8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-#reklama1 {
-  left: 0;
+section p, section ul, section li {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
 }
 
-#reklama2 {
-  right: 0;
+section ul {
+    padding: 0;
+    list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: #070707;
-}
-
-a:hover {
-  color: #E773B5;
-}
-
-#FAQ, #PRACOWNICY {
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 15px;
-  color: #E773B5;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 15px;
-  color: #070707;
-}
-
-#profilowe_zosia_zdj {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-right: 15px;
-  border-radius: 50%;
-}
-
-ul, ol {
-  list-style: none;
-  padding: 0;
+section ul li {
+    margin-bottom: 10px;
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .zdjeciagaleryjne a img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.zdjeciagaleryjne a img:hover {
+    transform: scale(1.05);
+}
+
+.map-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
 footer {
-  background-color: #506453;
-  color: #F2FAF8;
-  padding: 20px 0;
-  margin-top: 20px;
-  text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e773b5;
 }
 
-footer div {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer address, footer p {
-  margin: 5px;
-}
-
-footer a {
-  color: #F2FAF8;
-  text-decoration: underline;
-}
-
-footer a:hover {
-  color: #E773B5;
+footer p {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 0.9em;
+    color: #666;
 }
