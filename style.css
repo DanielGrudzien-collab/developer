@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  color: #070707;
+  font-family: "Albert Sans", sans-serif;
+}
+
+header {
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin: auto;
+}
+
+.navigator #logo {
+  display: flex;
+  align-items: center;
+}
+
+.navigator #logo img {
+  height: 80px;
+}
+
+.navigator #logo h1 {
+  font-family: "Playfair Display", serif;
+  color: #e773b5;
+}
+
+.navigator nav ul {
+  display: flex;
+  gap: 15%;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+.navigator nav ul li {
+  display: inline;
+}
+
+.navigator nav ul li a {
+  text-decoration: none;
+  color: #070707;
+}
+
+.navigator nav ul li a:hover {
+  color: #e773b5;
+}
+
+#social_media {
+  display: flex;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f2faf8;
+  border-radius: 10px;
+}
+
+div h2 {
+  font-family: "Playfair Display", serif;
+  color: #070707;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div p,
+div ul,
+div li {
+  font-family: "Albert Sans", sans-serif;
+  color: #070707;
+  text-align: center;
+}
+
+div li {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.zdjeciagaleryjne a img {
+  width: 295px;
+  height: 295px;
+  object-fit: cover;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#iframe {
+  text-align: center;
+  margin: 0;
+}
+hr {
+  border-color: #e773b5;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Albert Sans", sans-serif;
+  color: #070707;
+}
