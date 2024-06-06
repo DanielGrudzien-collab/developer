@@ -10,7 +10,7 @@ header {
   position: relative;
 }
 
-.navigator {
+.nawi {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,21 +18,21 @@ header {
   margin: auto;
 }
 
-.navigator #logo {
+.nawi #logo {
   display: flex;
   align-items: center;
 }
 
-.navigator #logo img {
+.nawi #logo img {
   height: 80px;
 }
 
-.navigator #logo h1 {
+.nawi #logo h1 {
   font-family: "Playfair Display", serif;
   color: #e773b5;
 }
 
-.navigator nav ul {
+.nawi nav ul {
   display: flex;
   gap: 15%;
 }
@@ -41,16 +41,16 @@ ol,
 li {
   list-style: none;
 }
-.navigator nav ul li {
+.nawi nav ul li {
   display: inline;
 }
 
-.navigator nav ul li a {
+.nawi nav ul li a {
   text-decoration: none;
   color: #070707;
 }
 
-.navigator nav ul li a:hover {
+.nawi nav ul li a:hover {
   color: #e773b5;
 }
 
