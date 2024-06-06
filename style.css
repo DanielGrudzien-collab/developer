@@ -9,6 +9,11 @@ header {
   position: relative;
 }
 
+#social_media {
+  display: flex;
+  align-items: self-end;
+}
+
 .nawi {
   display: flex;
   justify-content: space-between;
@@ -99,6 +104,14 @@ div li {
   text-align: center;
   margin: 0;
 }
+#onas a {
+  text-decoration: none;
+  color: #e773b5;
+}
+#kontakt a {
+  text-decoration: none;
+  color: #070707;
+}
 hr {
   border-color: #e773b5;
 }
@@ -110,4 +123,28 @@ footer {
 footer p {
   font-family: "Albert Sans", sans-serif;
   color: #070707;
+}
+
+/* https://webroad.pl/html5-css3/162-tooltip-chmurka-podpowiedzi Tutaj znajduje się chmurka, którą się inspirowałem. Niektóre ustawienia usunałęm lub w ogólnie nie dodałem bo były zbędne.*/
+
+#kontakt a {
+  display: inline;
+  position: relative;
+}
+#kontakt a:hover {
+  color: #7e6925;
+  text-decoration: none;
+}
+#kontakt a:hover:after {
+  background: #070707;
+  border-radius: 5px;
+  bottom: 18px;
+  color: #fff;
+  content: attr(title);
+  display: block;
+  left: 50%;
+  padding: 5px 15px;
+  position: absolute;
+  white-space: nowrap;
+  box-shadow: 0 0 3px #fff;
 }
