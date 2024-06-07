@@ -31,11 +31,18 @@ header {
   height: 130px;
 }
 
-.nawi #logo h1 {
-  font-family: "Playfair Display", serif;
-  color: #e773b5;
+#avatar {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
 }
 
+#avatar img {
+  height: 120px;
+  width: 110px;
+  border: 1px solid #e773b5;
+  border-radius: 10px;
+}
 .nawi nav ul {
   display: flex;
   gap: 15%;
